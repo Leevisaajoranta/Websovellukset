@@ -62,11 +62,11 @@ table {
     }
 
     .animation-box {
-        width: 50px;
+        width: 100px;
         height: 50px;
-        background-color: lightgreen;
+        background-color: rgb(78, 107, 78);
         position: relative;
-        animation: move 2s infinite alternate;
+        animation: move 1s infinite alternate;
       }
       
       @keyframes move {

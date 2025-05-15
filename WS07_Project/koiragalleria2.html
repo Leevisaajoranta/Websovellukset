@@ -1,59 +1,29 @@
 <!DOCTYPE html>
-<html lang="Fi">
-  <head>
-    <title>Koira sivusto</title>
-    <link rel="icon" href="./Kuvat/koiralogo.png" />
-    <link rel="stylesheet" href="./Kuvat/koiralogo.png" />
+Koira galleria 2
 
-    <link rel="stylesheet" href="./Styles/styles.css" />
-  </head>
-  <body class="Kuvagalleria">
-    <header>
-      <h1>Koira sivusto</h1>
-      <div class="logo">
-        <img
-          src="./Kuvat/koiralogo.png"
-          maxwidth="100%"
-          height="90px"
-          alt="logo"
-        />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Etusivu</a></li>
-          <li><a href="./Tietoja.html">Tietoja</a></li>
-          <li><a href="./Kuvagalleria.html">Kuvagalleria</a></li>
-          <li><a href="./Yhteydenotto.html">Ota yhteyttä</a></li>
-        </ul>
-      </nav>
-    </header>
-    <h2 class="page-title">Koira galleria</h2>
-
-
-    <main>
-      <div class="slideshow-container">
+<div class="slideshow-container2">
         <div class="mySlides fade">
           <div class="numbertext">1/4</div>
-          <img src="./Kuvat/svemppa3.png" style="width: 100%" />
-          <div class="text">Länsiylämaanterrieri</div>
+          <img src="./Kuvat/labbis2.png" style="width: 100%" />
+          <div class="text">Labradorinnoutaja</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">2/4</div>
-          <img src="./Kuvat/ilona2.png" style="width: 100%" />
-          <div class="text">Kääpiösnautseri</div>
+          <img src="./Kuvat/kultainen2.png" style="width: 100%" />
+          <div class="text">Kultainennoutaja</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">3/4</div>
-          <img src="./Kuvat/quieres.png" style="width: 100%" />
-          <div class="text">Tarjoava koira</div>
+          <img src="./Kuvat/suomenlapin2.png" style="width: 100%" />
+          <div class="text">Suomenlapinkoira</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">4/4</div>
-          <img src="./Kuvat/KFC-koira.png" style="width: 100%" />
-          <div class="text">KFC-koira</div>
+          <img src="./Kuvat/saksanpaimen2.png" style="width: 100%" />
+          <div class="text">Saksanpaimenkoira</div>
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -67,9 +37,8 @@
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
       </div>
-    </main>
 
-    <script>
+          <script>
       let slideIndex = 1;
       showSlides(slideIndex);
 
@@ -101,6 +70,3 @@
         dots[slideIndex - 1].className += " active";
       }
     </script>
-    <footer>© Copyright 2025 Leevi Saajoranta</footer>
-  </body>
-</html>

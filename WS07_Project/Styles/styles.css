@@ -57,7 +57,7 @@
         margin: 0;
         padding: 0;
         display: flex;
-        gap: 200px;
+        gap: 50px;
     }
 
 
@@ -218,8 +218,10 @@
 }
 
 .kerro-kuka-olet {
+    color: black;
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
 }
 
 .transition-button {
@@ -282,3 +284,24 @@ footer {
     font-size: 24px;
     border-radius: 8px;
 }
+
+@media (max-width: 768px) {
+    .box-grid, .box-column {
+      grid-template-columns: 1fr;
+    }
+  
+    .etusivu-main {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .text-section {
+      padding-left: 0;
+    }
+  
+    .viikonhauva {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

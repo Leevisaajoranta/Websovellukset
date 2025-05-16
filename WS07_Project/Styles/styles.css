@@ -62,9 +62,14 @@
 
 
     nav a {
+        text-decoration: none;
         color: black;
         font-size: 23px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    nav a:hover {
+        color: wheat;
     }
 
     .slideshow-container {
@@ -144,23 +149,103 @@
         to {opacity: 1;}
     }
 
+    .slideshow-container2 {
+        max-width: 700px;
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: #0c0c0ccc;
+    }
+
+.text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .4;}
+        to {opacity: 1;}
+    }
+
 
    .etusivu-main {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%; 
-    padding: 20px 40px;
+    padding: 30px;
     box-sizing: border-box;
 }
 
 .text-section {
     flex: 1;
-    padding-left: 400px;
+    padding-left: 0;
 }
 
-.Etusivu h2 {
-    font-size: 50px;
+.h2.page-title {
+    font-size: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     margin-top: 40px;
     width: 100%;
@@ -168,12 +253,14 @@
 
 .page-title {
     text-align: center;
-    font-size: 40px;
+    font-size: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 40px;
 }
 
 .intro {
     font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     margin-top: 10px;
     width: 100%;
@@ -187,6 +274,7 @@
     justify-content: center;
     align-items: center;
     font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #f7f7f7;
     height: 800px;
     width: 420px;
@@ -198,7 +286,7 @@
 
 .viikonhauva p {
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .yhteydenotto {
@@ -220,7 +308,7 @@
 .kerro-kuka-olet {
     color: black;
     text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     
 }
 
@@ -305,3 +393,60 @@ footer {
     }
   }
   
+  .ajankohtaista { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    height: 400px;
+    width: 400px;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 20px;
+    top: -800px;
+    left: 30px;
+}
+
+.ajankohtaista p {
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.Koira-vinkki { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    height: 300px;
+    width: 400px;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 20px;
+    top: -750px;
+    left: 30px;
+}
+
+.Koira-vinkki p {
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.koiragalleria {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.koiragalleria2 {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
